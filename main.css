@@ -161,3 +161,10 @@ input:focus,
 textarea:focus {
   outline-color: #bd063e;
 }
+
+footer,
+footer p {
+  background-color: #bd063e;
+  color: #f8d6c8;
+  padding: 16px 0;
+}
