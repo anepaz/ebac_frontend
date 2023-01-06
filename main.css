@@ -1,3 +1,152 @@
-h1 {
-  color: green;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body > header {
+    background-color: #4b704b;
+    padding: 16px 0;
+    color: azure;
+    font-size: 28px;
+}
+
+body > header a {
+    text-decoration: none;
+    color: azure;
+}
+
+body > header a:hover {
+    color: rgb(222, 238, 222);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header li a {
+    color: azure;
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: rgb(222, 238, 222);
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    display: inline-block;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgb(248, 241, 231);
+}
+
+#sports .articles article a {
+    background-color: #305f30;
+}
+
+#sports .articles article a:hover {
+    background-color: #568f56;
+}
+
+#economy {
+    background-color: #e9f3fa;
+}
+
+#economy .articles article a {
+    background-color: #1e6899
+}
+
+#economy .articles article a:hover {
+    background-color: #367ead
+}
+
+#movies {
+    background-color: rgb(255, 239, 254);
+}
+
+#movies .articles article a {
+    background-color: #8d5092
+}
+
+#movies .articles article a:hover {
+    background-color: #a268a7
+}
+
+#technology {
+    background-color: #e6eeff;
+}
+
+#technology .articles article a {
+    background-color: #454981
+}
+
+#technology .articles article a:hover {
+    background-color: #5d619b
 }
