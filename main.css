@@ -12,6 +12,7 @@ header {
   padding: 16px 0;
   background-color: #bd063e;
   color: #f8d6c8;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 header,
@@ -91,17 +92,69 @@ section p {
   display: inline;
 }
 
-#translated-books {
-  background-color: #bd063e;
+#search-books {
+  background-color: #f8d6c8;
+  margin-bottom: 24px;
 }
 
-#translated-books h2 {
+#search-books .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-books h2 {
+  color: #bd063e;
+}
+
+#search-books input {
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#search-books input:focus {
+  border-color: #bd063e;
+  border: none;
+}
+
+#search-books button {
+  width: 100px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: none;
+  background-color: #bd063e;
+  font-weight: bold;
   color: #f8d6c8;
+  border: none;
+  transition: background-color 200ms linear, color 200ms linear;
+}
+
+#search-books input:focus {
+  border: none;
+}
+
+#search-books button:hover {
+  background-color: #cf0f4b;
+  color: #f8d6c8;
+  cursor: pointer;
+}
+
+#translated-books {
+  background-color: #bd063e;
 }
 
 #translated-books .container {
   flex-direction: column;
   align-items: center;
+}
+
+#translated-books h2 {
+  color: #f8d6c8;
 }
 
 .socials img {
@@ -133,10 +186,12 @@ form button {
   width: 320px;
   margin-bottom: 8px;
   padding: 8px;
+  border-radius: 5px;
 }
 
 form textarea {
   resize: none;
+  height: 100px;
 }
 
 section h3 {
@@ -149,6 +204,8 @@ form button {
   color: #f8d6c8;
   border: none;
   transition: background-color 200ms linear, color 200ms linear;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 form button:hover {
