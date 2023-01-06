@@ -98,8 +98,12 @@ section p {
 }
 
 #search-books .container {
-  flex-direction: column;
-  align-items: center;
+  display: block;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
 }
 
 #search-books h2 {
@@ -120,8 +124,7 @@ section p {
 
 #search-books button {
   width: 100px;
-  margin-top: 8px;
-  margin-bottom: 24px;
+  margin: 16px 0 24px 16px;
   padding: 8px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
