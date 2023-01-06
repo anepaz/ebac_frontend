@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  padding: 16px 0;
+  background-color: #bd063e;
+  color: #f2c9b9;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header nav li a,
+header h1 a {
+  color: #f8d6c8;
+  transition: color 200ms linear;
+  text-decoration: none;
+}
+
+header nav li a:hover,
+header h1 a:hover {
+  color: #ecb7a2;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
