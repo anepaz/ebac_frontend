@@ -104,6 +104,7 @@ section p {
 .search-field {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #search-books h2 {
@@ -158,6 +159,21 @@ section p {
 
 #translated-books h2 {
   color: #f8d6c8;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #91c7e4;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
 }
 
 .socials img {
