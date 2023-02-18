@@ -1,65 +1,73 @@
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Tahoma;
-  font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Outfit';
 }
-.container {
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(215, 240, 240);
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 4px;
-  margin-bottom: 4px;
 }
 
-.form {
-  background-color: #cc7990;
-  padding: 3rem;
-  border-radius: 4px;
-}
-
-.column {
+#container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  max-width: 40em;
+  background-color: rgb(253, 244, 220);
+  border-radius: 1rem;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-input {
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  border: 0;
-  outline: none;
-  padding: 4px;
+h1 {
+  font-size: 1.775rem;
 }
 
-input:focus {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+form .new-contact {
+  display: inline-flex;
+}
+
+form .new-contact input {
+  margin-right: 0.4em;
+  border-radius: 5px;
+  border: 2px solid rgb(173, 149, 212);
+}
+
+form .new-contact input:focus {
   outline: none !important;
-  transition: 0.2s;
+  border: 2px solid rgb(115, 80, 172);
 }
 
-label {
-  margin-bottom: 6px;
-  font-weight: bold;
+button {
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  transition: 500ms;
+  background-color: rgb(204, 191, 223);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(173, 149, 212);
   color: white;
 }
 
-.button {
-  border: none;
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
+table tr {
+  width: 30em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(192, 191, 191);
 }
 
-.btn {
-  background-color: #cc4855;
-  padding: 8px;
-  width: 72px;
-}
-
-.btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  transition: 0.3s;
-  cursor: pointer;
-  background-color: #cc3255;
+.table-title {
+  border-bottom: 1px solid rgb(59, 59, 59);
 }
