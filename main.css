@@ -44,6 +44,10 @@ form .new-contact input:focus {
   border: 2px solid rgb(115, 80, 172);
 }
 
+.new-contact input#phone {
+  width: 9rem;
+}
+
 button {
   border: none;
   border-radius: 5px;
