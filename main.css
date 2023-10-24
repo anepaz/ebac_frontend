@@ -1,77 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 * {
-  box-sizing: border-box;
-  font-family: 'Outfit';
-}
-
-body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  background-color: rgb(215, 240, 240);
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  background-color: #5f27cd;
+  padding: 16px 0;
+  color: #fff;
   display: flex;
+  border-bottom: 16px solid #341f97;
   justify-content: center;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
-#container {
-  display: flex;
-  flex-direction: column;
-  max-width: 40em;
-  background-color: rgb(253, 244, 220);
-  border-radius: 1rem;
-  align-items: center;
-  margin-top: 4rem;
-  padding: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+header button {
+  margin-left: 16px;
 }
 
-h1 {
-  font-size: 1.775rem;
+form {
+  background-color: #c8d6e5;
+  padding: 24px 0;
+  text-align: center;
 }
 
-form .new-contact {
-  display: inline-flex;
+form h2 {
+  margin-bottom: 16px;
 }
 
-form .new-contact input {
-  margin-right: 0.4em;
-  border-radius: 5px;
-  border: 2px solid rgb(173, 149, 212);
-}
-
-form .new-contact input:focus {
-  outline: none !important;
-  border: 2px solid rgb(115, 80, 172);
-}
-
-.new-contact input#phone {
-  width: 9rem;
+input, button {
+  padding: 8px;
 }
 
 button {
+
+  background-color: #009432;
   border: none;
-  border-radius: 5px;
-  padding: .5rem;
-  transition: 500ms;
-  background-color: rgb(204, 191, 223);
-}
-
-button:hover {
   cursor: pointer;
-  background-color: rgb(173, 149, 212);
-  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-table tr {
-  width: 30em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid rgb(192, 191, 191);
-}
-
-.table-title {
-  border-bottom: 1px solid rgb(59, 59, 59);
+#botao-cancelar {
+  background-color: red;
 }

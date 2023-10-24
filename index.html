@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agenda de Contatos - EBAC</title>
-  <link rel="stylesheet" href="./main.css">
+  <title>JQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-  <main>
-    <div id="container">
-      <header>
-        <h1>Agenda de Contatos - Exercício EBAC</h1>
-      </header>
-      <form>
-        <div class="new-contact">
-          <input type="text" id="name" name="name" required placeholder="Cecilia Meireles">
-          <input type="number" id="phone" name="phone" required placeholder="(99) 99999-9999">
-          <button>Cadastrar</button>
-        </div>
-      </form>
-    <table>
-      <tr class="table-title">
-        <th>Nome</th>
-        <th>Telefone</th>
-      </tr>
-    </table>
-    </div>
-  </main>
-  <script src="./main.js"></script>
-</body>
+  <header>
+    <h1>Galeria de Fotos</h1>
+    <button type="button">Nova Imagem +</button>
+  </header>
 
+  <form>
+    <h2>Inserir nova imagem</h2>
+    <input type="url" required placeholder="URL da Imagem">
+    <button type="submit">Adicionar</button>
+    <button type="reset" id="botao-cancelar">Cancelar</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
 </html>
