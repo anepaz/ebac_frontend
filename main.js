@@ -11,9 +11,9 @@ function addContact(name, phone) {
 }
 
 button.addEventListener("click", (e) => {
-  e.preventDefault();
-  addContact(inputName.value, inputPhone.value);
-
-  inputName.value = "";
-  inputPhone.value = "";
+  if (inputName.value && inputPhone.value) {
+    addContact(inputName.value, inputPhone.value);
+    inputName.value = "";
+    inputPhone.value = "";
+  }
 });
